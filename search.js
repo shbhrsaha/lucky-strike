@@ -26,7 +26,7 @@ window.onload = function(){
                                 then select "Add As Search Engine". \
                                 </p>';
     document.body.innerHTML += '<form target="" method="GET"><input type="text" name="q" placeholder="Right-click me" /></form>';
-    document.body.innerHTML += '<p>Set the \'Name\' to be "Lucky Strike" and the \'Keyword\' to be "ls".</p>';
+    document.body.innerHTML += '<p>Set the \'Name\' to be "Lucky Strike" and the \'Keyword\' to be "LS".</p>';
     document.body.innerHTML += '<p>Click \'OK\'.';
 
     document.body.innerHTML += '<p>Then, navigate to <a href="chrome://settings/" target="_blank">Chrome Settings</a>. \
@@ -35,7 +35,7 @@ window.onload = function(){
                                 </p>';
 
     document.body.innerHTML += '<p>Your omnibox searches will now lead to Google\'s "I\'m Feeling Lucky". \
-                                To view search results for your last query, click the Lucky Strike logo on the top right of your browser or press ALT+K. \
+                                To view search results for your last query, click the Lucky Strike logo on the top right of your browser or press ALT+L. \
                                 To force a regular Google search, just use the \'g\' keyword before your query. \
                                 </p>';
 
