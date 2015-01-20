@@ -14,12 +14,17 @@
   },
   "permissions": [
     "tabs",
-    "storage"
+    "storage",
+    "http://www.google.com/lucky-strike-extension/*",
+    "https://www.google.com/lucky-strike-extension/*"
   ],
   "background": {
     "scripts": ["background.js"]
   },
-  "omnibox": {
-    "keyword": "l"
-  }
+  "content_scripts": [{
+      "css": ["styles.css"],
+      "js": ["search.js"],
+      "matches": ["*://www.google.com/lucky-strike-extension/*"],
+      "run_at": "document_start"
+   }]
 }

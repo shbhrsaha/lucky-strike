@@ -1,16 +1,17 @@
-chrome.omnibox.onInputEntered.addListener(
-  function(text) {
-    chrome.storage.sync.set({'lastQuery': text});
-    chrome.tabs.update({ url: "http://www.google.com/search?q="+text+"&btnI" });
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+      chrome.storage.local.set({'lastQuery': request.query});
+      chrome.tabs.update({ url: "http://www.google.com/search?q="+request.query+"&btnI" });
+      sendResponse({response: "success"});
   });
 
 chrome.browserAction.onClicked.addListener(
   function(tab) {
-    chrome.storage.sync.get("lastQuery", function(obj) {
+    chrome.storage.local.get("lastQuery", function(obj) {
       chrome.tabs.update({ url: "http://www.google.com/search?q="+obj.lastQuery });
     });
   });
 
 chrome.runtime.onInstalled.addListener(function (object) {
-    chrome.tabs.create({url: "https://github.com/shbhrsaha/lucky-strike/blob/master/README.md"});
+    chrome.tabs.create({url: "http://www.google.com/lucky-strike-extension/"});
 });
