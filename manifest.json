@@ -33,7 +33,7 @@
         "default": "Alt+L",
         "mac": "Alt+L"
       },
-      "description": "Toggle feature foo"
+      "description": "Show search results"
     }
   }
 }
