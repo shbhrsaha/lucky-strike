@@ -35,7 +35,7 @@ window.onload = function(){
                                 </p>';
 
     document.body.innerHTML += '<p>Your omnibox searches will now lead to Google\'s "I\'m Feeling Lucky". \
-                                To view search results for your last query, click the Lucky Strike logo on the top right of your browser. \
+                                To view search results for your last query, click the Lucky Strike logo on the top right of your browser or press ALT+K. \
                                 To force a regular Google search, just use the \'g\' keyword before your query. \
                                 </p>';
 
