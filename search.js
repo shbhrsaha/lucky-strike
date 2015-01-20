@@ -14,6 +14,7 @@ if (query != ""){
 window.onload = function(){
     document.body.innerHTML = "";
     document.head.innerHTML = "";
+    document.body.style.display = "block";
 
     if (query != "") {
       return;
